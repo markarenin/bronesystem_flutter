@@ -15,8 +15,7 @@ A few resources to get you started if this is your first Flutter project:
 
 This app work with private back-end. 
 
-**LOGIN**
-----
+#### LOGIN
   Returns json data about a single user.
 
 * **URL**
@@ -40,8 +39,7 @@ This app work with private back-end.
     **Content:** `{ name : "Michael Bloom", apartment: 200, token: "auth_token" }`
  
 
-**SERVICES**
-----
+#### SERVICES
   Returns json about a collected user data.
 
 * **URL**
@@ -83,8 +81,7 @@ This app work with private back-end.
     }
 ]```
 
-**GET CALENDAR**
-----
+#### GET CALENDAR
   Returns json calendar of service and busy times.
 
 * **URL**
@@ -143,8 +140,7 @@ This app work with private back-end.
     "books": []
 }```
 
-**TO BOOK**
-----
+#### TO BOOK
   Returns json data about booking.
 
 * **URL**
