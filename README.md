@@ -159,7 +159,7 @@ This app work with private back-end.
 
   * **Code:** 200 <br />
     **Content:** ```{
-    "name": "Adam A",
+    "name": "Michael Bloom",
     "apartment": 201,
     "book": {
         "id": 37,
@@ -173,7 +173,7 @@ This app work with private back-end.
   * **Code:** 500 <br />
     **Description:** return 500 if the time already busy and return details about booking
     **Content:** ```{
-    "name": "Adam A",
+    "name": "Michael Bloom",
     "apartment": 201,
     "book": {
         "id": 37,
