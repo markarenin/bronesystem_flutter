@@ -14,4 +14,4 @@ A few resources to get you started if this is your first Flutter project:
 ### Back-end
 
 This app work with private back-end. 
-The api docs can see here [https://documenter.getpostman.com/view/19891867/UzR1L3FD#9979c455-b93d-4fce-ba2d-84ebf93a9558](https://documenter.getpostman.com/view/19891867/UzR1L3FD#9979c455-b93d-4fce-ba2d-84ebf93a9558)
+The api docs can see here: [Postman Bronesystem Docs](https://documenter.getpostman.com/view/19891867/UzR1L3FD#9979c455-b93d-4fce-ba2d-84ebf93a9558)
