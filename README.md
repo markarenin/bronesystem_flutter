@@ -171,7 +171,7 @@ This app work with private back-end.
 * **Error Response:**
 
   * **Code:** 500 <br />
-    **Description:** return 500 if the time already busy and return details about booking
+    **Description:** return 500 if the time already busy and return details about booking <br />
     **Content:** ```{
     "name": "Michael Bloom",
     "apartment": 201,
