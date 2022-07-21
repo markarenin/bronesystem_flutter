@@ -1,5 +1,6 @@
+import 'package:bronesystem/servicesprovider.dart';
 import 'package:bronesystem/ui/page/login_page.dart';
-import 'package:bronesystem/ui/widgets/SafeContainer.dart';
+import 'package:bronesystem/ui/page/services_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'authprovider.dart';
@@ -18,17 +19,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Paul Kerese 14',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: context.watch<AuthProvider>().status == Status.notLoggedIn
-          ? const LoginPage()
-          : const Scaffold(
-              body: SafeContainer(
-                child: SafeArea(child: Text("Logined")),
-              ),
-            ),
-    );
+        title: 'Paul Kerese 14',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: context.watch<AuthProvider>().status == Status.notLoggedIn
+            ? const LoginPage()
+            : ChangeNotifierProvider(
+                create: (_) => ServicesProvider(
+                  authProvider: context.read<AuthProvider>(),
+                ),
+                child: const ServicesPage(),
+              ));
   }
 }
