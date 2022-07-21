@@ -22,7 +22,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: context.watch<AuthProvider>().loggedInStatus == Status.notLoggedIn ? LoginPage() : Container(decoration: BoxDecoration(color: Colors.red,)),
+      home: context.watch<AuthProvider>().status == Status.notLoggedIn
+          ? const LoginPage()
+          : const Scaffold(
+              body: SafeContainer(
+                child: SafeArea(child: Text("Logined")),
+              ),
+            ),
     );
   }
 }

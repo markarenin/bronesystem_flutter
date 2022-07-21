@@ -15,7 +15,7 @@ class AuthProvider extends ChangeNotifier {
 
   Status _loggedInStatus = Status.notLoggedIn;
 
-  Status get loggedInStatus => _loggedInStatus;
+  Status get status => _loggedInStatus;
 
   login(String name, int apartment) async {
     final Map<String, dynamic> loginData = {'name': name, 'apartment': apartment};
